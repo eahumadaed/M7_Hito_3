@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido a la Gestión de Arriendos</h1>
+        <p class="lead">Esta es tu plataforma para gestionar usuarios, propiedades y arriendos.</p>
+        <hr class="my-4">
+        <p>Usa los enlaces de arriba para navegar por las secciones.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'usuario_list' %}" role="button">Ver Usuarios</a>
+    </div>
+{% endblock %}
